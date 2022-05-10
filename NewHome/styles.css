@@ -1,0 +1,109 @@
+html
+{
+    height: 100vh;
+}
+
+body
+{
+    margin:0;
+}
+
+/* navbar */
+
+#home-page
+{
+    background-color: rgb(208, 146, 168);
+}
+
+.container-fluid
+{
+    padding:3% 10% 7%;
+}
+
+.navbar-brand
+{
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-item
+{
+    padding-left:2rem;
+}
+
+/* content */
+
+.rows
+{
+    padding-top:5rem;
+    padding-bottom: 3rem;
+}
+
+.button-action
+{
+   margin:2rem 1rem 2rem 0;
+}
+
+h2
+{
+    padding-top:5rem;
+    padding-bottom:2rem;
+}
+
+img 
+{
+    max-width: 100%;
+    height: auto;
+}
+
+/* description */
+
+.headd
+{
+    padding-top:2rem;
+}
+
+.app-img
+{
+    margin-bottom: 3rem;
+    padding: 2rem 0 0 3rem;
+}
+
+.desc
+{
+    font-size: 1.5rem;
+}
+
+h4
+{
+    color:black
+}
+#second-page
+{
+    background-color: rgb(177, 225, 220);
+    text-align: center;
+}
+
+/* Footer */
+
+#footer
+{
+    background-color: lightblue;
+    padding:7% 15%;
+    text-align: center;
+}
+
+.icons
+{
+    display: inline-block;
+    padding:2rem;
+}
+
+.edit
+{
+    text-decoration: none;
+    color:black;
+}
+
+
+

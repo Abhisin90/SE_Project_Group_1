@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Meeting event</title>
+        
+        <!-- css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        
+        <!-- bootstrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+        <!-- font-awesome -->
+        <script src="https://kit.fontawesome.com/5b09b83335.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="myDIV" class="header">
+            <h2 style="margin:5px">Host Events</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <input type="text" id="myInput" placeholder="Title...">
+                    </div>            
+                    <div class="col-lg-3">
+                        <input type="text" id="myDate" placeholder="Date...">
+                    </div>
+                    <div class="col-lg-3">
+                        <input type="text" id="myTime" placeholder="Time...">
+                    </div>
+                    <span onclick="newElement()" class="addBtn">Add</span>
+                </div>
+            </div>
+        </div>
+        
+
+        <ul id="myUL">
+            <div class="container">
+                <div id="ed" class="row edittt">
+                    <div class="Events col-lg-4">
+                        <li><h2>Webinar on WEB 3.0</h2></li>
+                        <li><h3>10 May 7:30 PM</h3></li>
+                    </div>
+                    <div class="Events col-lg-4">
+                        <li><h2>Crypto-Creating The New World</h2></li>
+                        <li><h3>15 May 5:30 PM</h3></li>
+                    </div>
+                    <div class="Events col-lg-4">
+                        <li><h2>Blockchain and AI</h2></li>
+                        <li><h3>18 May 4:30 PM</h3></li>
+                    </div>
+                    <div class="Events col-lg-4">
+                        <li><h2>ETFs-The New Stock Market</h2></li>
+                        <li><h3>25 May 6:30 PM</h3></li>
+                    </div>
+                    
+               </div>
+            </div>
+        </ul>
+
+        <script src="index.js" charset="UTF-8"></script>
+    </body>
+</html>

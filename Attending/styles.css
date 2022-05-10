@@ -1,0 +1,39 @@
+html
+{
+    height: 100vh;
+}
+
+body
+{
+    margin:0;
+}
+
+.screen
+{
+    text-align: center;
+    background-color: black;
+    padding-top:10rem;
+    padding-bottom:14rem;
+}
+
+.icon
+{
+    text-align: center;
+    padding-top:2rem;
+    padding-bottom:2rem
+}
+
+.fas
+{
+    padding-left: 2rem;
+}
+
+.mic2
+{
+    display: none;
+}
+
+.video2
+{
+    display: none;
+}
