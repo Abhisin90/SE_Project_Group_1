@@ -1,97 +1,37 @@
-// // Create a "close" button and append it to each list item
-// var myNodelist = document.getElementsByTagName("LI");
-// var i;
-// for (i = 0; i < myNodelist.length; i++) {
-//   var span = document.createElement("SPAN");
-//   var txt = document.createTextNode("\u00D7");
-//   span.className = "close";
-//   span.appendChild(txt);
-//   myNodelist[i].appendChild(span);
-// }
-
-// // Click on a close button to hide the current list item
-// var close = document.getElementsByClassName("close");
-// var i;
-// for (i = 0; i < close.length; i++) {
-//   close[i].onclick = function() {
-//     var div = this.parentElement;
-//     div.style.display = "none";
-//   }
-// }
-
-// // Add a "checked" symbol when clicking on a list item
-// var list = document.querySelector('ul');
-// list.addEventListener('click', function(ev) {
-//   if (ev.target.tagName === 'LI') {
-//     ev.target.classList.toggle('checked');
-//   }
-// }, false);
 
 // Create a new list item when clicking on the "Add" button
 function newElement() {
-  var li = document.createElement("li");
+
   var inputValue = document.getElementById("myInput").value;
   var inputValue2 = document.getElementById("myDate").value;
   var inputValue3 = document.getElementById("myTime").value;
-  // var t = document.createTextNode(inputValue);
-  // li.appendChild(t);
-  // if (inputValue === '') {
-  //   alert("You must write something!");
-  // } else {
-  //   document.getElementById("myUL").appendChild(li);
-  // }
-  // document.getElementById("myInput").value = "";
+  
+  const h2new = document.createElement('h2');
+  h2new.innerText = `${inputValue}`;
+  const h3new = document.createElement('h3');
+  h3new.innerText = `${inputValue2} ${inputValue3}` ;
 
-  // var u = document.createTextNode(inputValue2);
-  // li.appendChild(u);
-  // if (inputValue === '') {
-  //   alert("You must write something!");
-  // } else {
-  //   document.getElementById("myUL").appendChild(li);
-  // }
-  // document.getElementById("myDate").value = "";
+  const linew1 = document.createElement('li');
+  linew1.appendChild(h2new);
+  const linew2 = document.createElement('li');
+  linew2.appendChild(h3new);
 
-  // var v = document.createTextNode(inputValue3);
-  // li.appendChild(v);
-  // if (inputValue === '') {
-  //   alert("You must write something!");
-  // } else {
-  //   document.getElementById("myUL").appendChild(li);
-  // }
-  // document.getElementById("myTime").value = "";
-// let x =  document.querySelector(".edittt")
-// console.log(x)
-// let a = `<div class="Events col-lg-4"></div>
-// <li><h2>${inputValue}</h2></li>
-// <li><h3>${inputValue2} ${inputValue3}</h3></li>
-// </div>`;
-// console.log(a)
-// x.innerHtml += `a`
+  const newDiv = document.createElement('div');
+  newDiv.append(linew1,linew2);
 
-const list = document.getElementById("ed");
+  newDiv.classList.add('Events','col-lg-4');
 
-list.innerHTML += `<div class="Events col-lg-4">
-<li><h2>${inputValue}</h2></li>
-<li><h3>${inputValue2} ${inputValue3}</h3></li>
-</div>`;
+  console.log(newDiv);
 
-document.getElementById("myInput").value = "";
-document.getElementById("myDate").value = "";
-document.getElementById("myTime").value = "";
+  const list = document.getElementById('ed');
+  list.appendChild(newDiv);
+
+  document.getElementById("myInput").value = "";
+  document.getElementById("myDate").value = "";
+  document.getElementById("myTime").value = "";
 
 
-console.log(list)
+  console.log(list)
 
-  // var span = document.createElement("SPAN");
-  // var txt = document.createTextNode("\u00D7");
-  // span.className = "close";
-  // span.appendChild(txt);
-  // li.appendChild(span);
-
-  //  for (i = 0; i < close.length; i++) {
-  //    close[i].onclick = function() {
-  //      var div = this.parentElement;
-  //      div.style.display = "none";
-  //    }
-  // }
+  
 }
